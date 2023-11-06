@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #c9d1d9;
+  box-sizing: border-box;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+body {
+  background-color: #dfe8da;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.home {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+.home .salutation {
+  position: absolute;
+  top: 10vh;
+  font-size: 1.3rem;
+  font-family: "Nanum Pen Script", cursive;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  color: #c9d1d9;
+}
+
+.home .logo {
+  position: absolute;
+  width: 20vw;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3 ease-in-out;
+  cursor: pointer;
+  animation: piscar 2.5s infinite;
+}
+
+@keyframes piscar {
+  0% {
+    filter: drop-shadow(0 0 0.6rem #ee8d04);
+  }
+  50% {
+    filter: drop-shadow(0 0 0.4rem #ee8d04);
+  }
+  100% {
+    filter: drop-shadow(0 0 0.6rem #ee8d04);
+  }
+}
+
+.home .logo:hover {
+  filter: drop-shadow(0 0 0.6rem #ee8d04);
+}
+
+header {
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  background-color: #000;
+  padding: 5px;
+  transition: top 0.3s;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li .OP,
+.telegram,
+.whatsapp {
+  width: 2.1rem;
+}
+
+section {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  height: 110vh;
+}
+
+section .ano {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 0.75rem;
+  color: #121212;
+  font-weight: 600;
+}
+
+.ano span {
+  font-size: 1.1rem;
+  font-family: "Nanum Pen Script", cursive;
+  color: #121212;
+}

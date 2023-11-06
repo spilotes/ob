@@ -1,0 +1,7 @@
+@media (max-width: 414px) {
+  .home .logo {
+    position: absolute;
+    width: 70vw;
+    top: 45%;
+  }
+}

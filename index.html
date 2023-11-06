@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+
+    <link rel="shortcut icon" type="imagex/png" href="./img/logo.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <title translate="no">Open Bistro</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"
+              ><img class="telegram" src="./img/logo.png" alt="Open Bistro"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="OP" src="./img/logo.png" alt="Open Bistro"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="whatsapp" src="./img/logo.png" alt="Open Bistro"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="home">
+      <div class="salutation">
+        <script language="JavaScript">
+          now = new Date();
+          if (now.getHours() >= 0 && now.getHours() < 5) {
+            document.write("boa madrugada e seja bem vindo");
+          } else if (now.getHours() >= 5 && now.getHours() < 12) {
+            document.write("bom dia e seja bem vindo");
+          } else if (now.getHours() >= 12 && now.getHours() < 17) {
+            document.write("boa tarde e seja bem vindo");
+          } else if (now.getHours() >= 17 && now.getHours() < 18) {
+            document.write("boa tarde e seja bem vindo");
+          } else {
+            document.write("boa noite e seja bem vindo");
+          }
+        </script>
+      </div>
+      <figure>
+        <img
+          class="logo"
+          onclick="op()"
+          src="./img/logo.png"
+          alt="Open Bistro"
+        />
+      </figure>
+    </main>
+
+    <section class="screen2">
+      <div class="ano">&copy;<span> 2023 BABY BAT CODES</span></div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/scrollreveal.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/clickto.js"></script>
+  </body>
+</html>
